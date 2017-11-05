@@ -1,0 +1,11 @@
+---
+- hosts: all
+  sudo: true
+
+  pre_tasks:
+    - name: Update apt cache if needed.
+      apt: update_cache=yes cache_valid_time=3600
+
+  tasks:    
+    - include: default_setup.yml
+    - include: docker_setup.yml
