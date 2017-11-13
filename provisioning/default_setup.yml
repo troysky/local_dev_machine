@@ -16,5 +16,8 @@
   - curl
   - software-properties-common
   - git-all
+  - jq
+  - unzip
+
 
   
